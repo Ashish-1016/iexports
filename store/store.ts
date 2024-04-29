@@ -1,10 +1,10 @@
 import { create } from "zustand";
 import { devtools, persist } from "zustand/middleware";
 
-type UserTheme = "dark" | "system" | "light";
+export type UserTheme = "dark" | "system" | "light";
 
 export type MidPointStore = {
-  userTheme: UserTheme;
+  userTheme?: UserTheme;
   setUserTheme: (newTheme: UserTheme) => void;
 };
 
