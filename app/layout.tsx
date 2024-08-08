@@ -3,11 +3,12 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ReactNode } from "react";
 import { LayoutWrapper } from "@/app/LayoutWrapper";
+import { cn } from "@/lib/utils";
 
 const poppins = Poppins( { weight: "500", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MidPoint",
+  title: "Loading...",
   description: "",
 };
 
@@ -19,7 +20,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={cn(poppins.className, "full-size-height")}>
       <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>

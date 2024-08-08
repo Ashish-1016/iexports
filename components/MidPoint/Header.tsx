@@ -1,4 +1,4 @@
-import { Logo } from "@/components/Logo";
+import { Logo } from "@/components/MidPoint/Logo";
 import { Switch } from "@/components/ui/switch";
 import { useTheme } from "next-themes";
 
